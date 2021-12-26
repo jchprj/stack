@@ -1,8 +1,8 @@
 # PDF Tools
 
-## Stpes 
+## Steps 
 
-From https://itsfoss.com/convert-multiple-images-pdf-ubuntu-1304/
+From [How to Convert Multiple Images to PDF in Ubuntu Linux](https://itsfoss.com/convert-multiple-images-pdf-ubuntu-1304/)
 
 - First install imagemagick  
     ```
@@ -19,14 +19,15 @@ From https://itsfoss.com/convert-multiple-images-pdf-ubuntu-1304/
 
 ## Issues
 
-- ImageMagick security policy 'PDF' blocking conversion
+- ImageMagick security policy 'PDF' blocking conversion  
+
     From https://stackoverflow.com/questions/52998331/imagemagick-security-policy-pdf-blocking-conversion  
 
 	Add
     ```
     <policy domain="coder" rights="read | write" pattern="PDF" />
     ```
-	just before </policymap> in `/etc/ImageMagick-7/policy.xml`
+	just before `</policymap>` in `/etc/ImageMagick-7/policy.xml`
 	
 	
 - PDF quality when converted
